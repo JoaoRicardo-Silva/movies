@@ -2,6 +2,7 @@
     color: white;
     object-fit: contain;
     height: 448px;
+    /* mask-image: linear-gradient(to top, transparent 1%, black); */
 }
 
 .banner-content {
@@ -23,6 +24,10 @@
     font-size: 0.8rem;
     max-width: 360px;
     height: 80px;
+}
+
+.banner-button-container{
+    display: flex;
 }
 
 .banner-button {
