@@ -31,7 +31,16 @@ function Banner() {
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         roundPosition: "center-center",
       }}
-    ></header>
+    >
+      <div className="banner-content">
+        <h1 className="banner-title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
+        <div className="banner-button">Assistir</div>
+        <div className="banner-button">Minha Lista</div>
+        <div className="banner-description"></div>
+      </div>
+    </header>
   );
 }
 
